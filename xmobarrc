@@ -1,0 +1,19 @@
+Config { font = "-artwiz-snap-*-*-*-*-*-*-*-*-*-*-*-*"
+       , bgColor = "#00020f"
+       , fgColor = "#64aed9"
+       , border = NoBorder
+       , borderColor = "#769cb2"
+       , position = TopSize L 93 20
+       , lowerOnStart = True
+       , commands = [ Run Cpu ["-t", "<total>%", "-H","50","--high","#c80000"] 20
+                    , Run Date "%H:%M %d/%m/%Y" "date" 100
+                    , Run Com "/home/lavish/bin/thermal.sh" [] "thm" 100
+                    , Run Com "/home/lavish/bin/battery.sh" [] "bat" 100
+                    , Run Com "/home/lavish/bin/volume.sh" [] "vol" 10
+		    , Run Com "/home/lavish/bin/hdaps.sh" [] "hdaps" 20
+                    , Run StdinReader
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = "%StdinReader% }{ %hdaps% C %cpu% %thm% B %bat% V %vol% %date%"
+       }

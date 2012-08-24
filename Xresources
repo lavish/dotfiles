@@ -1,0 +1,76 @@
+! Basic Color Definitions
+! -----------------------
+#define	black		#222222
+#define lblack		#666666
+#define	red		#A62A3E
+#define	lred		#F04758
+#define	green		#38912B
+#define	lgreen		#93C724
+#define	yellow		#B27D12
+#define	lyellow		#DDB62B
+#define	blue		#355C9A
+#define	lblue		#45A3E6
+#define	magenta		#7C4F9F
+#define	lmagenta	#C953EF
+#define	cyan		#258F8F
+#define	lcyan		#60C6C8
+#define	white		#C0C0C0
+#define	lwhite		#FFFFFF
+
+! Extended Color Definitions
+! --------------------------
+#define	col_background	#EEEEE
+#define dblack		#00020f
+
+! Xterm
+! -----
+XTerm*vt100.metaSendsEscape:	true
+XTerm*font:		-*-terminus-medium-*-*-*-14-*-*-*-*-*-*-*
+XTerm*urgentOnBell:	true
+
+! Misc
+! ----
+Xft.dpi:		96
+Xcursor.theme:		Vanilla-DMZ
+
+! URxvt
+! -----
+URxvt*scrollBar:	false
+URxvt.scrollstyle:	plain
+URxvt*saveLines:	10000
+URxvt*urgentOnBell:	true
+URxvt*font:		-*-terminus-medium-*-*-*-14-*-*-*-*-*-*-*
+URxvt*fading:		25
+URxvt*fadeColor:	col_background
+URxvt.tabbed.tabbar-fg:	7
+URxvt.tabbed.tabbar-bg:	4
+URxvt.tabbed.tab-fg:	7
+URxvt.tabbed.tab-bg:	4
+
+! Dzen
+! ----
+dzen2*font:		-artwiz-snap-*-*-*-*-*-*-*-*-*-*-*-*
+dzen2*foreground:	lblue
+dzen2*background:	dblack
+
+! Terminal Colors
+! ---------------
+*background:		col_background
+*foreground:		black
+*cursorColor:		lblue
+*color0:		black
+*color8:		lblack
+*color1:		red
+*color9:		lred
+*color2:		green
+*color10:		lgreen
+*color3:		yellow
+*color11:		lyellow
+*color4:		blue
+*color12:		lblue
+*color5:		magenta
+*color13:		lmagenta
+*color6:		cyan
+*color14:		lcyan
+*color7:		white
+*color15:		lwhite
