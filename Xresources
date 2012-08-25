@@ -19,13 +19,13 @@
 
 ! Extended Color Definitions
 ! --------------------------
-#define	col_background	#EEEEE
-#define dblack		#00020f
+#define	col_background	#EEEEEE
+#define dblack		#00020F
 
 ! Xterm
 ! -----
 XTerm*vt100.metaSendsEscape:	true
-XTerm*font:		-*-terminus-medium-*-*-*-14-*-*-*-*-*-*-*
+XTerm*font:		-*-terminus-medium-*-*-*-14-*-*-*-*-*-iso10646-*
 XTerm*urgentOnBell:	true
 
 ! Misc
