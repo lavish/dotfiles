@@ -5,7 +5,7 @@ Config { font = "-artwiz-snap-*-*-*-*-*-*-*-*-*-*-*-*"
        , borderColor = "#769cb2"
        , position = TopSize L 93 20
        , lowerOnStart = True
-       , commands = [ Run Cpu ["-t", "<total>%", "-H","50","--high","#c80000"] 20
+       , commands = [ Run Cpu ["-t", "<total>%", "-H","50","--high","#f6283c"] 20
                     , Run Date "%H:%M %d/%m/%Y" "date" 100
                     , Run Com "/home/lavish/bin/thermal.sh" [] "thm" 100
                     , Run Com "/home/lavish/bin/battery.sh" [] "bat" 100

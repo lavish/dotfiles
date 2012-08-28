@@ -1,11 +1,11 @@
 #!/bin/sh
 
+xrdb ~/.Xresources
 xset b 20 100 30
-xmodmap ~/.Xmodmap
-feh --bg-scale ~/images/clouds.jpg
+feh --bg-scale ~/Pictures/wallpapers/clouds.jpg
 trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --width 7 --transparent true --alpha 0 --tint 0x00020f --height 16 --padding 20 --distance 2 &
 xsetroot -cursor_name left_ptr
-dropbox start &
-nm-applet &
+pgrep dropbox || dropbox start &
+pgrep nm-applet || nm-applet &
 pgrep urxvtd || urxvtd -q -o -f
-exec ck-launch-session dbus-launch --sh-syntax --exit-with-session xmonad
+exec ck-launch-session dbus-launch --sh-syntax --exit-with-session /usr/bin/xmonad

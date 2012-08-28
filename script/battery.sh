@@ -16,10 +16,10 @@ percent_left=$(($(cat /sys/devices/platform/smapi/BAT0/remaining_percent)/10))
 
 case $percent_left in
 	0)	bar='·····'
-		pre='<fc=#c80000>'
+		pre='<fc=#f6283c>'
 		post='</fc>' ;;
 	1|2)	bar='|····'
-		pre='<fc=#c80000>'
+		pre='<fc=#f6283c>'
 		post='</fc>' ;;
 	3|4)	bar='||···' ;;
 	5|6)	bar='|||··' ;;

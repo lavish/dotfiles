@@ -7,8 +7,8 @@ case $vol in
 	1|2)   bar='<fc=#cccccc>|····</fc>' ;;
 	3|4)   bar='<fc=#cccccc>||···</fc>' ;;
 	5|6)   bar='<fc=#cccccc>|||··</fc>' ;;
-	7|8)   bar='<fc=#c80000>||||·</fc>' ;;
-	9|10)  bar='<fc=#c80000>|||||</fc>' ;;
+	7|8)   bar='<fc=#f6283c>||||·</fc>' ;;
+	9|10)  bar='<fc=#f6283c>|||||</fc>' ;;
 	*)     bar='-----' ;;
 esac
 
